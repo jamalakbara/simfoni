@@ -23,37 +23,37 @@ const Home = () => {
   const data = [
     {
       key: 1,
-      icon: "/img/",
+      icon: "/img/data.png",
       header: "Complete Big Data",
       description: "With data all around the internet, never worried about missing information"
     },
     {
       key: 2,
-      icon: "/img/",
+      icon: "/img/dashboard.png",
       header: "Flexible & Customize Dashboard",
       description: "Customize your dashboard exactly as what you need"
     },
     {
       key: 3,
-      icon: "/img/",
+      icon: "/img/context.png",
       header: "Context based sentiment Analysis",
       description: "Custom sentiment algorithm based on client industry subjective"
     },
     {
       key: 4,
-      icon: "/img/",
+      icon: "/img/data.png",
       header: "Very Intelligence Automation System",
       description: "Accurate and precise AI algorithms according to client objectives"
     },
     {
       key: 5,
-      icon: "/img/",
+      icon: "/img/analytics.png",
       header: "Responsive analytic",
       description: "Adaptation to the latest viral issues/trends on social media."
     },
     {
       key: 6,
-      icon: "/img/",
+      icon: "/img/report.png",
       header: "Automation Reporting",
       description: "Make reporting never that easy. never worried about human error anymore"
     },

@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { Children } from 'react'
 
-const Description = ({text, className}) => {
+const Description = ({children, className}) => {
   return (
-    <p className={`${className?className:''}`}>{text}</p>
+    <div className={`text-2xl ${className?className:''}`}>
+      {children}
+    </div>
   )
 }
 

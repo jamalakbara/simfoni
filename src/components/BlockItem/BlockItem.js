@@ -4,12 +4,21 @@ import Header from '../Header/Header'
 
 const BlockItem = ({src,header,desc}) => {
   return (
-    <div className='h-96 shadow-md rounded-md p-5'>
-      <figure>
+    <div className='h-72 shadow-lg rounded-md p-5
+                    flex flex-col '>
+      <figure className='w-16 h-16'>
         <img src={src} alt={src} />
       </figure>
-      <Header text={header} />
-      <Description text={desc} />
+      <div className='mt-5'>
+        <h1 className='font-semibold text-2xl mb-5 capitalize' >
+          {header}
+        </h1>
+        <Description className={'text-xl'}>
+          <p>
+            {desc}
+          </p>
+        </Description>
+      </div>
     </div>
   )
 }

@@ -11,7 +11,7 @@ const Navlinks = () => {
     {
       key: 2,
       label: "How We Works",
-      to: "/"
+      to: "/how-we-works"
     },
     {
       key: 3,
@@ -38,7 +38,7 @@ const Navlinks = () => {
     <div className='flex gap-x-10'>
       {
         links.map(link => (
-          <Link className='font-bold' key={link.key} to={link.to}>
+          <Link className='font-bold text-2xl' key={link.key} to={link.to}>
             {link.label}
           </Link>
         ))

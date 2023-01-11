@@ -7,6 +7,7 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import HowWeWorks from './routes/HowWeWorks/HowWeWorks';
 
 const router = createBrowserRouter([
   {
@@ -14,8 +15,8 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "about",
-    element: <div>About</div>,
+    path: "/how-we-works",
+    element: <HowWeWorks />,
   },
 ]);
 
