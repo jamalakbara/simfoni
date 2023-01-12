@@ -98,7 +98,7 @@ const HowWeWorks = () => {
       <section className='py-16 w-full'>
         <SectionSplit>
           <div className='flex-1 flex justify-center'>
-            <Title className={'w-48'} text={'How We Work'} />
+            <Title className={'w-48 text-8xl'} text={'How We Work'} />
           </div>
           <div className='flex-1'>
             <Description>
@@ -128,7 +128,7 @@ const HowWeWorks = () => {
 
         <SectionSplit>
           <div className='flex-1'>
-            <Header className={'text-start mb-8'} text={'Simfoni.Insight Analytics'} />
+            <Header className={'text-start text-4xl mb-8'} text={'Simfoni.Insight Analytics'} />
             <Description className={'mb-8'}>
               <p>
               Our groundbreaking solutions are packed with the latest AI models.

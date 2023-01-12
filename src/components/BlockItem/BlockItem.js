@@ -2,10 +2,11 @@ import React from 'react'
 import Description from '../Description/Description'
 import Header from '../Header/Header'
 
-const BlockItem = ({src,header,desc}) => {
+const BlockItem = ({src,header,desc, className}) => {
   return (
-    <div className='h-72 shadow-lg rounded-md p-5
-                    flex flex-col '>
+    <div className={`h-72 shadow-lg rounded-md p-5
+                    flex flex-col 
+                    ${className?className:''}`}>
       <figure className='w-16 h-16'>
         <img src={src} alt={src} />
       </figure>
