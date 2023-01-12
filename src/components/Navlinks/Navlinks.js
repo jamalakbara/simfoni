@@ -16,7 +16,7 @@ const Navlinks = () => {
     {
       key: 3,
       label: "Use Case",
-      to: "/"
+      to: "/usecase"
     },
     {
       key: 4,

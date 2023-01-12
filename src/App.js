@@ -8,6 +8,7 @@ import {
   Link,
 } from "react-router-dom";
 import HowWeWorks from './routes/HowWeWorks/HowWeWorks';
+import UseCase from './routes/UseCase/UseCase';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: "/how-we-works",
     element: <HowWeWorks />,
+  },
+  {
+    path: "/usecase",
+    element: <UseCase />,
   },
 ]);
 
