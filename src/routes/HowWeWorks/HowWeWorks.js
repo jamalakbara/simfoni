@@ -102,7 +102,7 @@ const HowWeWorks = () => {
           </div>
           <div className='flex-1'>
             <Description>
-              <p className='mb-5'>
+              <p className='mb-10'>
                 Simfoni Insight, founded in 2020, is a growing digital media analytics company focusing on data mining of public opinion, social media listening and real time market intelligence by ArtificiaI Intelligence technology.  
               </p>
               <p>
@@ -110,20 +110,34 @@ const HowWeWorks = () => {
               </p>
             </Description>
           </div>
+          <figure className='absolute left-0 z-[-1]'>
+            <img src='/img/Ellipse 7.png' alt='elips 7' />
+          </figure>
+          <figure className='absolute left-10 z-[-1]'>
+            <img src='/img/half-spiral.png' alt='half spiral' />
+          </figure>
         </SectionSplit>
 
         <SectionSingle>
-          <Header text={'Our Process'} />
+          <Header className={'mb-32'} text={'Our Process'} />
 
           <figure>
             <img className='mx-auto' src='/img/process.png' alt='process' />
           </figure>
+
+          <figure className='absolute right-0 bottom-0 z-[-1]'>
+            <img src='/img/Ellipse 9.png' alt='elips 9' />
+          </figure>
         </SectionSingle>
 
-        <SectionSingle>
-          <Header text={'Our Features'} />
+        <SectionSingle className={'bg-contain bg-center bg-no-repeat'} style={{backgroundImage: 'url("/img/Ellipse 10.png")'}}>
+          <Header className={'mb-32'} text={'Our Features'} />
 
           <Blocks blocks={data} />
+
+          <figure className='absolute right-0 top-1/2 translate-y-[-50%] z-[-1]'>
+            <img src='/img/tabung.png' alt='tabung' />
+          </figure>
         </SectionSingle>
 
         <SectionSplit>
@@ -148,6 +162,13 @@ const HowWeWorks = () => {
               <img src='/img/map.png' alt='map' />
             </figure>
           </div>
+
+          <figure className='absolute top-0 left-0 z-[-1]'>
+            <img src='/img/Ellipse 7.png' alt='elips 7' />
+          </figure>
+          <figure className='absolute top-0 right-0 z-[-1] w-96 h-96'>
+            <img src='/img/Ellipse 10.png' alt='elips 10' />
+          </figure>
         </SectionSplit>
 
         <SectionSingle>
@@ -160,6 +181,9 @@ const HowWeWorks = () => {
               ))
             }
           </div>
+          <figure className='absolute bottom-0 right-0 z-[-1]'>
+            <img src='/img/Ellipse 10.png' alt='elips 10' />
+          </figure>
         </SectionSingle>
       </section>
     </>

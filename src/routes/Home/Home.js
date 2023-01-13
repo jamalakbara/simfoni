@@ -72,6 +72,12 @@ const Home = () => {
           <div className='flex-1'>
             <img src='/img/hero.png' />
           </div>
+          <figure className='absolute left-0 z-[-1]'>
+            <img src='/img/Ellipse 7.png' alt='elips 7' />
+          </figure>
+          <figure className='absolute left-1/4 translate-x-[-25%] bottom-0 z-[-1]'>
+            <img src='/img/half-spiral.png' alt='half spiral' />
+          </figure>
         </SectionSplit>
 
         <SectionSplit reverse={true}>
@@ -81,12 +87,23 @@ const Home = () => {
           <div className='flex-1'>
             <Carousel items={imageCarousel} />
           </div>
+          <figure className='absolute right-0 top-1/2 translate-y-[-50%] z-[-1]'>
+            <img src='/img/Ellipse 9.png' alt='elips 9' />
+          </figure>
+          <figure className='absolute right-[10%] bottom-0 z-[-1]'>
+            <img src='/img/tabung.png' alt='tabung' />
+          </figure>
         </SectionSplit>
         
-        <SectionSingle>
-          <Header text={'Our Key Differentiator'} />
+        <SectionSingle className={'bg-contain bg-center bg-no-repeat'} style={{backgroundImage: 'url("/img/Ellipse 10.png")'}} >
+          <Header className={'mb-32'} text={'Our Key Differentiator'} />
           <Blocks blocks={data} />
+
+          <figure className='absolute -bottom-10 z-[-1]'>
+            <img src='/img/ulir.png' alt='ulir' />
+          </figure>
         </SectionSingle>
+
       </section>
     </>
   )

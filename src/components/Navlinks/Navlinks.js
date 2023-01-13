@@ -21,7 +21,7 @@ const Navlinks = () => {
     {
       key: 4,
       label: "Pricing",
-      to: "/"
+      to: "/pricing"
     },
     {
       key: 5,

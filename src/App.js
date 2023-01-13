@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Home from './routes/Home/Home';
 import {
@@ -9,6 +8,7 @@ import {
 } from "react-router-dom";
 import HowWeWorks from './routes/HowWeWorks/HowWeWorks';
 import UseCase from './routes/UseCase/UseCase';
+import Pricing from './routes/Pricing/Pricing';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/usecase",
     element: <UseCase />,
+  },
+  {
+    path: "/pricing",
+    element: <Pricing />,
   },
 ]);
 

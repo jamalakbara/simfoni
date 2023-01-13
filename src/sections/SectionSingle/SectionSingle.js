@@ -1,6 +1,6 @@
-const SectionSingle = ({children, className}) => {
+const SectionSingle = ({children, className, style}) => {
   return (
-    <section className={`relative min-h-screen p-12 ${className?className:''}`}>
+    <section style={style} className={`relative min-h-screen p-12 ${className?className:''}`}>
       {children}
     </section>
   )

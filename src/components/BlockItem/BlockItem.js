@@ -4,8 +4,8 @@ import Header from '../Header/Header'
 
 const BlockItem = ({src,header,desc, className}) => {
   return (
-    <div className={`h-72 shadow-lg rounded-md p-5
-                    flex flex-col 
+    <div className={`h-72 shadow-lg rounded-3xl p-5
+                    flex flex-col bg-white
                     ${className?className:''}`}>
       <figure className='w-16 h-16'>
         <img src={src} alt={src} />
