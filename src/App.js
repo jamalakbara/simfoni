@@ -3,12 +3,13 @@ import Home from './routes/Home/Home';
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
 } from "react-router-dom";
 import HowWeWorks from './routes/HowWeWorks/HowWeWorks';
 import UseCase from './routes/UseCase/UseCase';
 import Pricing from './routes/Pricing/Pricing';
+import Partnership from './routes/Partnership/Partnership';
+import NotFoundPage from './routes/NotFoundPage/NotFoundPage';
+import Navbar from './components/Navbar/Navbar';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,14 @@ const router = createBrowserRouter([
   {
     path: "/pricing",
     element: <Pricing />,
+  },
+  {
+    path: "/partnership",
+    element: <Partnership />,
+  },
+  {
+    path: "/about-us",
+    element: <><Navbar /> <NotFoundPage /></>
   },
 ]);
 

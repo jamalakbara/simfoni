@@ -1,6 +1,4 @@
-import React from 'react'
 import Description from '../Description/Description'
-import Header from '../Header/Header'
 
 const BlockItem = ({src,header,desc, className}) => {
   return (

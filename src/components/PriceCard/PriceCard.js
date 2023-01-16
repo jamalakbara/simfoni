@@ -22,7 +22,7 @@ const PriceCard = ({plan, price, desc, features, isMostPopular}) => {
             features.map((feature,idx) => (
               <li key={idx} className='flex items-center'>
                 <figure>
-                  <img src='/img/ceklis.png' />
+                  <img src='/img/ceklis.png' alt='ceklis' />
                 </figure>
                 <p>
                   {feature}

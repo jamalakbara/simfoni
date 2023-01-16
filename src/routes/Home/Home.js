@@ -70,7 +70,7 @@ const Home = () => {
             <Button label={'Book Demo Now'} />
           </div>
           <div className='flex-1'>
-            <img src='/img/hero.png' />
+            <img src='/img/hero.png' alt='hero' />
           </div>
           <figure className='absolute left-0 z-[-1]'>
             <img src='/img/Ellipse 7.png' alt='elips 7' />
