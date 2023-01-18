@@ -21,38 +21,41 @@ const Pricing = () => {
       isMostPopular: false
     },
     {
-      key: 1,
-      plan: "Individual",
-      cost: 49,
-      desc: "For individuals tracking a small brand",
+      key: 2,
+      plan: "Team",
+      cost: 119,
+      desc: "Good for startups and small brands to track and analyze mentions",
       features: [
-        "3 Keywords",
-        "2k mentions / mo",
-        "Update every 12h"
+        "7 Keyword",
+        "5k mentions / mo",
+        "Unlimited users",
+        "Update every hour",
       ],
       isMostPopular: false
     },
     {
-      key: 1,
-      plan: "Individual",
-      cost: 49,
-      desc: "For individuals tracking a small brand",
+      key: 3,
+      plan: "Pro",
+      cost: 179,
+      desc: "Great for growing brands and agencies to track, analyze and benchmark against competition",
       features: [
-        "3 Keywords",
-        "2k mentions / mo",
-        "Update every 12h"
+        "12 Keyword",
+        "25k mentions / mo",
+        "Unlimited users",
+        "Realtime update",
       ],
       isMostPopular: true
     },
     {
-      key: 1,
-      plan: "Individual",
-      cost: 49,
-      desc: "For individuals tracking a small brand",
+      key: 4,
+      plan: "Enterprise",
+      cost: 299,
+      desc: "Best for big business with our most powerful features and advanced reporting included",
       features: [
-        "3 Keywords",
-        "2k mentions / mo",
-        "Update every 12h"
+        "25 Keyword",
+        "100k mentions / mo",
+        "Unlimited users",
+        "Realtime update",
       ],
       isMostPopular: false
     },
@@ -64,36 +67,35 @@ const Pricing = () => {
       header: "Preparation",
       lists: [
         "Objective Client",
-        "Objective Client",
-        "Objective Client",
-        "Objective Client",
-        "Objective Client",
+        "Approval Objective",
+        "Keyword Research",
+        "Brief Sheet Creation",
+        "Keyword Approval",
       ],
       days: "2-5 Days"
     },
     {
       key: 2,
-      header: "Preparation",
+      header: "Analysis",
       lists: [
-        "Objective Client",
-        "Objective Client",
-        "Objective Client",
-        "Objective Client",
-        "Objective Client",
+        "Data Collection ",
+        "Media Analysis",
+        "Conversational Analysis",
+        "Social Network Analysis",
+        "Reporting",
       ],
-      days: "2-5 Days"
+      days: "2-3 Days"
     },
     {
       key: 3,
-      header: "Preparation",
+      header: "Services",
       lists: [
-        "Objective Client",
-        "Objective Client",
-        "Objective Client",
-        "Objective Client",
-        "Objective Client",
+        "Account Monitoring",
+        "Keywords Modification / Recommendation",
+        "Costume Reporting",
+        "Consultation ",
       ],
-      days: "2-5 Days"
+      days: "Contract Period"
     },
   ]
 
@@ -105,7 +107,7 @@ const Pricing = () => {
         <SectionSingle>
           <Title className={'text-center mb-20'} text={'Choose your plan'} />
 
-          <div className='flex gap-8 justify-center'>
+          <div className='flex flex-wrap gap-8 justify-center'>
             {
               prices.map(price => (
                 <PriceCard key={price.key} desc={price.desc} features={price.features} plan={price.plan} price={price.cost} isMostPopular={price.isMostPopular} />
