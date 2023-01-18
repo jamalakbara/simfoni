@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 const Navlinks = () => {
   const links = [
@@ -11,36 +11,51 @@ const Navlinks = () => {
     {
       key: 2,
       label: "How We Works",
-      to: "/"
+      to: "/how-we-works"
     },
     {
       key: 3,
       label: "Use Case",
-      to: "/"
+      to: "/usecase"
     },
     {
       key: 4,
       label: "Pricing",
-      to: "/"
+      to: "/pricing"
     },
     {
       key: 5,
       label: "Partnership",
-      to: "/"
+      to: "/partnership"
     },
     {
       key: 6,
       label: "About Us",
-      to: "/"
+      to: "/about-us"
     },
   ]
+
+  let activeStyle = {
+    "--tw-text-opacity": '1',
+    color: 'rgb(99 102 241 / var(--tw-text-opacity))'
+  }
+
+  const handleClick = () => {
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
+    }, 100)
+  }
+
   return (
     <div className='flex gap-x-10'>
       {
         links.map(link => (
-          <Link className='font-bold' key={link.key} to={link.to}>
+          <NavLink onClick={handleClick} className={`font-bold text-2xl active:text-indigo-500 hover:text-indigo-500`} style={({ isActive }) => isActive ? activeStyle : undefined } key={link.key} to={link.to}>
             {link.label}
-          </Link>
+          </NavLink>
         ))
       }
     </div>

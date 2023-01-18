@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Title = ({text}) => {
+const Title = ({text, className}) => {
   return (
-    <h1 className='font-bold text-5xl my-10'>{text}</h1>
+    <h1 className={`font-bold text-6xl my-10 ${className ? className : ''}`}>{text}</h1>
   )
 }
 
