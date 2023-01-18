@@ -64,12 +64,15 @@ const Home = () => {
       <Navbar />
       <section className='py-16 w-full'>
         <SectionSplit>
-          <div className='flex-1'>
-            <Title text={'Get Insight, Sees All, Knows All.'} />
+          <div className='flex-1 
+                          sm:flex sm:flex-col sm:items-center 
+                          md:items-start'
+          >
+            <Title className={'sm:text-center md:text-left'} text={'Get Insight, Sees All, Knows All.'} />
 
             <Button label={'Book Demo Now'} />
           </div>
-          <div className='flex-1'>
+          <div className='flex-1 sm:hidden md:block'>
             <img src='/img/hero.png' alt='hero' />
           </div>
           <figure className='absolute left-0 z-[-1]'>
@@ -82,7 +85,7 @@ const Home = () => {
 
         <SectionSplit reverse={true}>
           <div className='flex-1'>
-            <Title className={'text-right'} text={'Intelligence Social Media and Marketplace'} />
+            <Title className={'sm:text-center md:text-right'} text={'Intelligence Social Media and Marketplace'} />
           </div>
           <div className='flex-1'>
             <Carousel items={imageCarousel} />
@@ -95,7 +98,7 @@ const Home = () => {
           </figure>
         </SectionSplit>
         
-        <SectionSingle className={'bg-contain bg-center bg-no-repeat'} style={{backgroundImage: 'url("/img/Ellipse 10.png")'}} >
+        <SectionSingle className={'bg-contain bg-center bg-no-repeat sm:mt-[450px] md:mt-0'} style={{backgroundImage: 'url("/img/Ellipse 10.png")'}} >
           <Header className={'mb-32'} text={'Our Key Differentiator'} />
           <Blocks blocks={data} />
 
