@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/simfoni/static/css/main.ac09d91c.css",
+    "main.js": "/simfoni/static/js/main.de63ccf7.js",
+    "static/js/787.22baa99c.chunk.js": "/simfoni/static/js/787.22baa99c.chunk.js",
+    "static/media/slick.svg": "/simfoni/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/simfoni/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/simfoni/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/simfoni/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/simfoni/index.html",
+    "main.ac09d91c.css.map": "/simfoni/static/css/main.ac09d91c.css.map",
+    "main.de63ccf7.js.map": "/simfoni/static/js/main.de63ccf7.js.map",
+    "787.22baa99c.chunk.js.map": "/simfoni/static/js/787.22baa99c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac09d91c.css",
+    "static/js/main.de63ccf7.js"
+  ]
+}
