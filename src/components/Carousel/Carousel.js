@@ -11,8 +11,10 @@ const Carousel = ({items}) => {
   }, [index, items.length]);
 
   return (
-    <div className="absolute left-0 top-1/2 translate-y-[-50%]">
-      <img src={items[index].image} alt={items[index]} />
+    <div className="sm:top-[400px] sm:h-[500px] 
+                    md:static md:h-full"
+    >
+      <img className="sm:h-full md:h-auto md:-ml-8 xl:-ml-12" src={items[index].image} alt={items[index]} />
     </div>
   )
 }

@@ -7,8 +7,11 @@ module.exports = {
     extend: {
       colors: {
         'white-transparent': 'rgba(255, 255, 255, 0.27)',
+      },
+      screens: {
+        'sm': '414px',
       }
     },
-  },
+    },
   plugins: [],
 }
